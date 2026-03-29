@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Plan your Sergio Sanctuary nature trip with sample itineraries for day trips, weekend escapes, and creator-focused mountain experiences.">
+  <title>Sergio Sanctuary | Nature Trip</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--nature">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Nature Trip Ideas</p>
+        <h1>Turn your visit into a full experience</h1>
+        <p>Choose an itinerary by pace, budget, and interest. Great for families, couples, friends, and media creators.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#itineraries">View Itineraries</a>
+          <a class="btn btn--ghost" href="camping-guide.html">Open Camping Guide</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="itineraries">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Suggested Plans</p>
+          <h2>Pick an itinerary that fits your group</h2>
+          <p>Each sample includes scenic stops, activity pacing, and downtime balance.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Half-Day Scenic Tour</h3>
+              <ul class="list-check">
+                <li>Sunrise viewpoint and quick photo session.</li>
+                <li>Breakfast at a nearby local eatery.</li>
+                <li>Short trail walk before noon departure.</li>
+              </ul>
+              <div class="card__meta">
+                <span>Ideal for: families</span>
+                <span>4-5 hours</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Weekend Nature Escape</h3>
+              <ul class="list-check">
+                <li>Check-in at afternoon, then sunset watch.</li>
+                <li>Overnight rest and early mountain sunrise.</li>
+                <li>Wellness stop before return trip.</li>
+              </ul>
+              <div class="card__meta">
+                <span>Ideal for: couples</span>
+                <span>2 days / 1 night</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Creator Content Loop</h3>
+              <ul class="list-check">
+                <li>Golden hour captures at scenic deck.</li>
+                <li>B-roll at trail and local activity spots.</li>
+                <li>Night ambiance shots and morning timelapse.</li>
+              </ul>
+              <div class="card__meta">
+                <span>Ideal for: vloggers</span>
+                <span>Flexible timing</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Mountain View Path</p>
+          <h2>Follow a simple nature route with checkpoints</h2>
+          <p>This illustrated mini-map shows a sample walking flow between scenic rest points and mountain-view highlights.</p>
+        </div>
+        <div class="mini-map-layout">
+          <div class="mini-map" data-reveal>
+            <div class="mini-map__surface" role="img" aria-label="Illustrated mountain-view path with four checkpoints from trailhead to final lookout">
+              <svg class="mini-map__path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M12 82 C20 74, 26 70, 34 64 S47 55, 55 48 S69 36, 81 22"/>
+                <path d="M12 82 C20 74, 26 70, 34 64 S47 55, 55 48 S69 36, 81 22"/>
+              </svg>
+
+              <div class="mini-map__marker mini-map__marker--forest" style="--x: 13%; --y: 82%;">
+                <span class="mini-map__pin">1</span>
+                <span class="mini-map__badge">
+                  <strong>Trailhead Start</strong>
+                  <span>Entry point with the easiest footing for first-time visitors.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--forest" style="--x: 35%; --y: 63%;">
+                <span class="mini-map__pin">2</span>
+                <span class="mini-map__badge">
+                  <strong>Pine Bend</strong>
+                  <span>Cool shaded stretch for quick reset shots and pacing breaks.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--sun" style="--x: 56%; --y: 48%;">
+                <span class="mini-map__pin">3</span>
+                <span class="mini-map__badge">
+                  <strong>Ridge Window</strong>
+                  <span>First full mountain opening with layered morning light.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--sun" style="--x: 81%; --y: 22%; --badge-offset: -58%;">
+                <span class="mini-map__pin">4</span>
+                <span class="mini-map__badge">
+                  <strong>Cloud Deck Lookout</strong>
+                  <span>Best scenic pause before turning back to the main route.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__caption">
+                <span>Illustrated path only, not to scale</span>
+                <span>Best window: sunrise to 8:00 AM</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="contact-card mini-map-panel" data-reveal>
+            <p class="eyebrow">Checkpoint Guide</p>
+            <h3>Use the path to pace the trip</h3>
+            <p>Each checkpoint gives you a natural place to rest, reframe photos, or decide whether to continue deeper into the mountain view route.</p>
+            <ul class="mini-map__legend">
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--forest-600);"></span>
+                <div>
+                  <strong>Trailhead Start</strong>
+                  <span>Good meeting point for families and groups before the walking section begins.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--forest-600);"></span>
+                <div>
+                  <strong>Pine Bend</strong>
+                  <span>Calmer stretch for breathing breaks, water checks, and short B-roll clips.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--sun-500);"></span>
+                <div>
+                  <strong>Ridge Window</strong>
+                  <span>Best checkpoint for first panoramic photos if the clouds are still low.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--sun-500);"></span>
+                <div>
+                  <strong>Cloud Deck Lookout</strong>
+                  <span>Final scenic stop with the strongest view payoff on this sample route.</span>
+                </div>
+              </li>
+            </ul>
+            <div class="mini-map__meta">
+              <span>Beginner-friendly pacing</span>
+              <span>View checkpoints</span>
+              <span>Return via same path</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Creator Gallery</p>
+          <h2>Frame ideas for vloggers and photographers</h2>
+          <p>Open any image to preview framing inspiration.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/viewpoint1.webp" data-lightbox-alt="Wide-angle ridge shot at sunrise">
+            <img src="images/attractions/viewpoint1.webp" alt="Wide-angle ridge shot at sunrise" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/lantay_view2.webp" data-lightbox-alt="Mountain horizon cinematic frame">
+            <img src="images/attractions/lantay_view2.webp" alt="Mountain horizon cinematic frame" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/la_presa2.webp" data-lightbox-alt="Lifestyle content with local food and farm setting">
+            <img src="images/attractions/la_presa2.webp" alt="Lifestyle content with local food and farm setting" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/acis_hillside2.webp" data-lightbox-alt="ACIS Hillside nature frame">
+            <img src="images/attractions/acis_hillside2.webp" alt="ACIS Hillside nature frame" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/hillsite1.webp" data-lightbox-alt="Hillside atmosphere for resort content">
+            <img src="images/attractions/hillsite1.webp" alt="Hillside atmosphere for resort content" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/nikas_ridge2.webp" data-lightbox-alt="Nika's Ridge frame with sky and mountain layers">
+            <img src="images/attractions/nikas_ridge2.webp" alt="Nika's Ridge frame with sky and mountain layers" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Nature trips in Sergio Sanctuary are designed around scenery, comfort, and realistic travel pacing.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="camping-guide.html">Camping Guide</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Plan Support</h3>
+        <ul>
+          <li><a href="contact.html">Contact form</a></li>
+          <li>Weather-ready trip prep</li>
+          <li>Group itinerary suggestions</li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary. Static midterm tourism website.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

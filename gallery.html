@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Photo gallery for Sergio Sanctuary tourism visuals.">
+  <title>Sergio Sanctuary | Gallery</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--attractions">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Sergio Sanctuary Gallery</p>
+        <h1>Visual snapshots of the destination</h1>
+        <p>A compact collection of photo references for students, creators, and visitors planning a Sergio Osmeña itinerary.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Gallery</p>
+          <h2>Tap image to enlarge</h2>
+          <p>Freshly added destination photos are arranged by viewpoints, food spots, and accommodations.</p>
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/viewpoint1.webp" data-lightbox-alt="Viewpoint 1 scenic panorama" data-reveal>
+            <img src="images/attractions/viewpoint1.webp" alt="Viewpoint 1 scenic panorama" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/viewpoint2.webp" data-lightbox-alt="Viewpoint 2 trail and horizon view" data-reveal>
+            <img src="images/attractions/viewpoint2.webp" alt="Viewpoint 2 trail and horizon view" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/lantay_view1.webp" data-lightbox-alt="Lantay View image 1" data-reveal>
+            <img src="images/attractions/lantay_view1.webp" alt="Lantay View image 1" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/lantay_view2.webp" data-lightbox-alt="Lantay View image 2" data-reveal>
+            <img src="images/attractions/lantay_view2.webp" alt="Lantay View image 2" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/nikas_ridge1.webp" data-lightbox-alt="Nika's Ridge image 1" data-reveal>
+            <img src="images/attractions/nikas_ridge1.webp" alt="Nika's Ridge image 1" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/nikas_ridge2.webp" data-lightbox-alt="Nika's Ridge image 2" data-reveal>
+            <img src="images/attractions/nikas_ridge2.webp" alt="Nika's Ridge image 2" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/la_presa1.webp" data-lightbox-alt="La Presa image 1" data-reveal>
+            <img src="images/attractions/la_presa1.webp" alt="La Presa image 1" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/la_presa_strawberryShake.webp" data-lightbox-alt="La Presa strawberry shake" data-reveal>
+            <img src="images/attractions/la_presa_strawberryShake.webp" alt="La Presa strawberry shake" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/cecillias_plate_food.webp" data-lightbox-alt="Cecillia's Plate signature food" data-reveal>
+            <img src="images/attractions/cecillias_plate_food.webp" alt="Cecillia's Plate signature food" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/acis_hillside1.webp" data-lightbox-alt="ACIS Hillside image 1" data-reveal>
+            <img src="images/attractions/acis_hillside1.webp" alt="ACIS Hillside image 1" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/hillsite_couple_room.webp" data-lightbox-alt="Hillsite couple room" data-reveal>
+            <img src="images/attractions/hillsite_couple_room.webp" alt="Hillsite couple room" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-lightbox-src="images/attractions/lantay_view_room.webp" data-lightbox-alt="Lantay View room accommodation" data-reveal>
+            <img src="images/attractions/lantay_view_room.webp" alt="Lantay View room accommodation" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Sergio Sanctuary visual library for tourism promotion and trip inspiration.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="contact.html">Trip Inquiry</a></li>
+          <li>Email: hello@sergiosanctuary.com</li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary. Static midterm tourism website.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

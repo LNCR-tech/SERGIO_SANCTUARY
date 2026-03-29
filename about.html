@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Learn about Sergio Sanctuary's mission to promote tourism in Sergio Osmeña through nature storytelling, local partnerships, and visitor planning support.">
+  <title>Sergio Sanctuary | About Us</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--about">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">About Sergio Sanctuary</p>
+        <h1>Tourism promotion rooted in nature and community</h1>
+        <p>We present Sergio Osmeña as a premium yet accessible mountain destination where visitors can explore scenic spots responsibly and confidently.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="contact.html">Get in Touch</a>
+          <a class="btn btn--ghost" href="attractions.html">See Attractions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <p class="eyebrow">Our Mission</p>
+              <h2>Promote Sergio Osmeña through meaningful tourism experiences</h2>
+              <p>
+                Sergio Sanctuary is a student project focused on destination marketing for Sergio Osmeña. It highlights scenic views, local offerings, accommodations, and practical planning assistance for diverse traveler types.
+              </p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <p class="eyebrow">Our Audience</p>
+              <h3>Who this website serves</h3>
+              <ul class="list-check">
+                <li>Families looking for refreshing mountain day trips.</li>
+                <li>Couples searching for calm scenic weekends.</li>
+                <li>Friend groups and students planning budget adventures.</li>
+                <li>Photographers, videographers, and vloggers seeking visual locations.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Core Values</p>
+          <h2>How we guide every recommendation</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Usefulness</h3>
+              <p>Travelers get practical information they can actually use for packing, scheduling, and transport planning.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Credibility</h3>
+              <p>Content is written with realistic tourism context, clear descriptions, and transparent planning assumptions.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Accessibility</h3>
+              <p>The site uses clear structure, mobile-responsive design, meaningful labels, and readable visual contrast.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Why It Matters</p>
+          <h2>Better planning creates better travel experiences</h2>
+          <p>When visitors can plan clearly, they stay longer, spend responsibly, and engage more respectfully with local environments and communities.</p>
+        </div>
+        <div class="info-strip" data-reveal>
+          <strong>Project Context:</strong> This is a static HTML/CSS/JS midterm website and does not use backend systems or databases.
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Sergio Sanctuary showcases the tourism identity of Sergio Osmeña through clear, visitor-centered digital storytelling.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Project Scope</h3>
+        <ul>
+          <li>Static front-end build</li>
+          <li>Tourism promotion focus</li>
+          <li>Offline and hosted compatibility</li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

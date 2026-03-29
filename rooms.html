@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse accommodation options in Sergio Sanctuary including cozy rooms, family spaces, and mountain-view stays for every itinerary type.">
+  <title>Sergio Sanctuary | Rooms & Accommodations</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--rooms">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Rooms & Accommodations</p>
+        <h1>Stay close to the scenery</h1>
+        <p>Choose room types that match your budget and travel style, from practical overnight stays to premium mountain-view escapes.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#room-options">Browse Rooms</a>
+          <a class="btn btn--ghost" href="contact.html">Request Availability</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="room-options">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Room Categories</p>
+          <h2>Accommodation picks for every group</h2>
+          <p>All options below are sample tourism listings for planning purposes.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/hillsite_couple_room.webp" alt="Hillsite couple room interior setup" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Hillsite Couple Room</h3>
+              <p>Comfortable and private option for couples who want quiet mountain mornings and scenic rest.</p>
+              <a class="btn btn--primary btn--small" href="#room-booking-form" data-fill-target="booking-room" data-fill-value="couple-room">Book This Room</a>
+              <div class="card__meta">
+                <span>2 guests</span>
+                <span>Starts at ₱1,500/night</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/hillsite_barkadahan_room.webp" alt="Barkadahan room with group-friendly layout" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Hillsite Barkadahan Room</h3>
+              <p>Spacious stay option for friend groups and students traveling together on a budget plan.</p>
+              <a class="btn btn--primary btn--small" href="#room-booking-form" data-fill-target="booking-room" data-fill-value="barkadahan-room">Book This Room</a>
+              <div class="card__meta">
+                <span>4 guests</span>
+                <span>Starts at ₱2,700/night</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/lantay_view_room.webp" alt="Lantay View premium room with mountain-facing outlook" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Lantay View Suite</h3>
+              <p>Premium option with broad mountain-facing windows and sunrise-focused placement.</p>
+              <a class="btn btn--primary btn--small" href="#room-booking-form" data-fill-target="booking-room" data-fill-value="lantay-suite">Book This Room</a>
+              <div class="card__meta">
+                <span>2 to 3 guests</span>
+                <span>Starts at ₱3,900/night</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="room-booking">
+      <div class="container">
+        <div class="section-head section-head--compact" data-reveal>
+          <p class="eyebrow">Room Booking</p>
+          <h2>Book a room in advance</h2>
+          <p>Choose a room from the cards above, then send a straightforward booking request with the stay details.</p>
+        </div>
+        <div class="request-layout">
+          <aside class="contact-card request-summary" data-reveal>
+            <p class="eyebrow">Booking Guide</p>
+            <h3>Choose the room that fits the trip</h3>
+            <p>Use the room card buttons to preselect the option, then add your stay dates and guest count in one clean form.</p>
+            <ul class="request-detail-list">
+              <li>
+                <strong>Couple room</strong>
+                <span>Best for quiet overnight stays, sunrise plans, and simple short trips.</span>
+              </li>
+              <li>
+                <strong>Barkadahan room</strong>
+                <span>Best for friends, families, and shared-budget travel groups.</span>
+              </li>
+              <li>
+                <strong>Lantay View Suite</strong>
+                <span>Best for scenic stays, premium rest, and slower weekend itineraries.</span>
+              </li>
+            </ul>
+          </aside>
+          <section class="contact-card request-form-card form-surface anchor-target" id="room-booking-form">
+            <p class="eyebrow">Booking Form</p>
+            <h3>Room reservation request</h3>
+            <form data-static-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="booking-name">Full Name</label>
+                  <input id="booking-name" name="booking-name" type="text" autocomplete="name" placeholder="Enter your name" required>
+                </div>
+                <div class="field">
+                  <label for="booking-email">Email Address</label>
+                  <input id="booking-email" name="booking-email" type="email" autocomplete="email" placeholder="you@email.com" required>
+                </div>
+                <div class="field">
+                  <label for="booking-phone">Phone Number</label>
+                  <input id="booking-phone" name="booking-phone" type="tel" autocomplete="tel" placeholder="+63 900 000 0000">
+                </div>
+                <div class="field">
+                  <label for="booking-room">Preferred Room Type</label>
+                  <select id="booking-room" name="booking-room" required>
+                    <option value="couple-room">Hillsite Couple Room</option>
+                    <option value="barkadahan-room">Hillsite Barkadahan Room</option>
+                    <option value="lantay-suite">Lantay View Suite</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="booking-checkin">Check-in Date</label>
+                  <input id="booking-checkin" name="booking-checkin" type="date" required>
+                </div>
+                <div class="field">
+                  <label for="booking-checkout">Check-out Date</label>
+                  <input id="booking-checkout" name="booking-checkout" type="date" required>
+                </div>
+                <div class="field">
+                  <label for="booking-guests">Number of Guests</label>
+                  <input id="booking-guests" name="booking-guests" type="number" min="1" max="10" placeholder="2" required>
+                </div>
+                <div class="field field--full">
+                  <label for="booking-notes">Notes</label>
+                  <textarea id="booking-notes" name="booking-notes" placeholder="Special requests, arrival time, or room preferences."></textarea>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn--primary" type="submit">Submit Booking</button>
+              </div>
+              <p class="form-status" aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="grid-2">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Inclusions</h3>
+              <ul class="list-check">
+                <li>Comfortable bedding and private washroom setup.</li>
+                <li>Morning coffee/tea availability in selected rooms.</li>
+                <li>Tourist information desk and schedule assistance.</li>
+                <li>Parking support and local transport referrals.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Before booking</h3>
+              <ul class="list-check">
+                <li>Confirm check-in time for early sunrise itinerary plans.</li>
+                <li>Request extra blankets during colder weather months.</li>
+                <li>Coordinate group room assignments in advance.</li>
+                <li>Ask about nearby dining options for late arrivals.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Stay Comparison</p>
+          <h2>Quick room overview</h2>
+        </div>
+        <div class="table-wrap" data-reveal>
+          <table>
+            <thead>
+              <tr>
+                <th>Room Type</th>
+                <th>Ideal Guests</th>
+                <th>Estimated Rate</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hillsite Couple Room</td>
+                <td>Solo, Couple</td>
+                <td>₱1,500 - ₱1,900</td>
+                <td>Short and practical overnight stays</td>
+              </tr>
+              <tr>
+                <td>Hillsite Barkadahan</td>
+                <td>3 to 4 guests</td>
+                <td>₱2,700 - ₱3,200</td>
+                <td>Family trips and student groups</td>
+              </tr>
+              <tr>
+                <td>Lantay View Suite</td>
+                <td>Couples, creators</td>
+                <td>₱3,900 - ₱4,500</td>
+                <td>Premium scenic retreat</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Find accommodations that make your Sergio Osmeña itinerary more comfortable and efficient.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="camping-guide.html">Camping Guide</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Contact</h3>
+        <ul>
+          <li>Email: hello@sergiosanctuary.com</li>
+          <li>Phone: +63 912 345 6789</li>
+          <li><a href="contact.html">Inquire Now</a></li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary. Static midterm tourism website.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

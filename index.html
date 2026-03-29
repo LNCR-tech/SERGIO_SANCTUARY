@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sergio Sanctuary is your tourism guide to Sergio Osmeña's scenic views, nature trips, accommodations, and travel planning.">
+  <title>Sergio Sanctuary | Discover Sergio Osmeña</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <!-- Shared site header and navigation -->
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero with animated rotating headline -->
+    <section class="hero hero--home">
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="images/backgrounds/thumbmail.webp" aria-hidden="true">
+        <source src="videos/herobanner-optimized.mp4" type="video/mp4">
+      </video>
+      <div class="container">
+        <div class="hero__content hero__intro" data-reveal="left">
+          <p class="eyebrow">Sergio Osmeña, Zamboanga del Norte</p>
+          <h1>
+            Discover
+            <span class="rotator" data-hero-rotator data-headlines="Cloud-Kissed Peaks|Sunrise Vistas|Nature-Filled Weekends">Cloud-Kissed Peaks</span>
+          </h1>
+          <p>
+            Sergio Sanctuary helps families, couples, students, photographers, and content creators plan a calm mountain escape with unforgettable viewpoints and local experiences.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="attractions.html">Explore Attractions</a>
+            <a class="btn btn--ghost" href="#weather">Check Weather</a>
+          </div>
+          <div class="pill-row" aria-label="Travel audience tags">
+            <span class="pill">Family-friendly</span>
+            <span class="pill">Couples trips</span>
+            <span class="pill">Photo-ready spots</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Highlights</p>
+          <h2>Why travelers choose Sergio Sanctuary</h2>
+          <p>Our organization promote local tourist attractions of the Municipality of Sergio Osmena. Helping tourist plan their visit and guiding them through the series of breathtaking attractions.</p>
+        </div>
+        <div class="carousel attractions-carousel" data-attraction-carousel role="region" aria-label="Attractions carousel">
+          <div class="carousel__viewport">
+            <div class="carousel__track">
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/lantay_view1.webp" alt="Lantay View scenic mountain deck" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">Lantay View Deck</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>Lantay View Deck</h3>
+                      <p>A wide-angle mountain panorama with breezy open-air viewpoints and prime sunrise visibility.</p>
+                      <div class="card__meta">
+                        <span>Best time: 5:30 AM</span>
+                        <span>Photo hotspot</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/la_presa_strawberryPlantation.webp" alt="La Presa strawberry plantation area" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">La Presa Strawberry Farm</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>La Presa Strawberry Farm</h3>
+                      <p>Enjoy strawberry picking vibes, signature shakes, and countryside views perfect for family visits.</p>
+                      <div class="card__meta">
+                        <span>Family-friendly</span>
+                        <span>Budget to premium</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/acis_hillside1.webp" alt="ACIS Hillside scenic area and facilities" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">ACIS Hillside</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>ACIS Hillside</h3>
+                      <p>Mountain-side space with relaxed sightseeing corners and casual stopover experiences.</p>
+                      <div class="card__meta">
+                        <span>Relaxation pick</span>
+                        <span>Group-friendly</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/nikas_ridge1.webp" alt="Nika's Ridge mountain viewpoint" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">Nika's Ridge</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>Nika's Ridge</h3>
+                      <p>Open ridge-line views with dramatic mountain layers ideal for early-morning visits.</p>
+                      <div class="card__meta">
+                        <span>Scenic stop</span>
+                        <span>Photo-ready</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/lantay_view2.webp" alt="Lantay View mountain overlook" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">Lantay View Overlook</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>Lantay View Overlook</h3>
+                      <p>Elevated view deck with broad mountain layers and calm weather atmosphere.</p>
+                      <div class="card__meta">
+                        <span>Highland view</span>
+                        <span>Family-friendly</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/la_presa3.webp" alt="La Presa highland attraction with scenic surroundings" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">La Presa View Loop</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>La Presa View Loop</h3>
+                      <p>Scenic farm-to-viewpoint stretch with relaxing countryside surroundings.</p>
+                      <div class="card__meta">
+                        <span>Scenic route</span>
+                        <span>Couple-friendly</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/hillsite2.webp" alt="Hillsite panorama overlooking Sergio Osmeña" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">Hillsite Panorama</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>Hillsite Panorama</h3>
+                      <p>Wide scenic exposure with clean horizons for daytime sightseeing and framing shots.</p>
+                      <div class="card__meta">
+                        <span>Panoramic view</span>
+                        <span>Sunset option</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/hillsite3.webp" alt="Hillsite scenic highland area" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">Hillsite Scenic Zone</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>Hillsite Scenic Zone</h3>
+                      <p>Highland atmosphere with cool weather and open-air scenery for restful trip pacing.</p>
+                      <div class="card__meta">
+                        <span>Calm stop</span>
+                        <span>All-day visit</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/hillsite1.webp" alt="Hillsite scenic deck with open mountain backdrop" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">Hillsite Cloud Deck</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>Hillsite Cloud Deck</h3>
+                      <p>Scenic stop known for airy atmosphere and open view framing during clear mornings.</p>
+                      <div class="card__meta">
+                        <span>Scenic stop</span>
+                        <span>Morning best</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="card card--flip carousel__slide" data-reveal tabindex="0">
+                <div class="card__flip">
+                  <div class="card__face card__face--front">
+                    <div class="card__media">
+                      <img src="images/attractions/acis_hillside3.webp" alt="ACIS Hillside scenic landscape angle" loading="lazy">
+                    </div>
+                    <div class="card__body">
+                      <h3 aria-hidden="true">ACIS Hillside Scenic Point</h3>
+                      <p class="card__hint">Click to reveal details.</p>
+                    </div>
+                  </div>
+                  <div class="card__face card__face--back">
+                    <div class="card__body">
+                      <h3>ACIS Hillside Scenic Point</h3>
+                      <p>Relaxed attraction with open skies and layered ridges ideal for landscape captures.</p>
+                      <div class="card__meta">
+                        <span>Landscape view</span>
+                        <span>Creator-friendly</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="video-layout">
+          <div data-reveal>
+            <p class="eyebrow">Featured Video</p>
+            <h2>See what you will be missing out!</h2>
+            <p>Watch this short promotional clip to preview the sweeping mountain views, cool highland atmosphere, and scenic experience that visitors can expect from Sergio Sanctuary.</p>
+          </div>
+          <div class="video-frame" data-reveal>
+          <video controls preload="none" poster="images/backgrounds/thumbmail.webp">
+            <source src="videos/viewpoint.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Weather widget with online API + offline fallback -->
+    <section class="section" id="weather">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Trip Planner</p>
+          <h2>Weekly weather forecast (Sunday to Saturday)</h2>
+          <p>Use this forecast as a quick planning guide for clothing, camp setup, and photo timing.</p>
+        </div>
+        <section class="weather-panel" id="weather-widget" data-lat="9.95" data-lon="123.40" aria-label="Weather forecast for Sergio Osmeña">
+          <div class="weather-header">
+            <h3>Sergio Osmeña Weather Forecast</h3>
+          </div>
+          <p class="weather-status" aria-live="polite">Preparing weather data...</p>
+          <div class="weather-grid"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="grid-3">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Plan by interest</h3>
+              <p>Find curated options for family bonding, couple retreats, student trips, and creator-friendly viewpoints.</p>
+              <a class="btn btn--primary btn--small" href="nature-trip.html">View Nature Trips</a>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Stay overnight</h3>
+              <p>Compare room types and amenities to choose the best base for sunrise adventures and evening rest.</p>
+              <a class="btn btn--primary btn--small" href="rooms.html">Check Rooms</a>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Need help deciding?</h3>
+              <p>Send your target date, group size, and interests so we can suggest a practical itinerary.<br></p>
+              <a class="btn btn--primary btn--small" href="contact.html">Contact Team</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Shared footer -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Sergio Sanctuary promotes responsible tourism in Sergio Osmeña through scenic storytelling, local partnerships, and practical visitor guidance.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="camping-guide.html">Camping Guide</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Visit Details</h3>
+        <ul>
+          <li>Open daily for tourism visits</li>
+          <li>Email: sergiosanctuary@gmail.com.com</li>
+          <li>Phone: +63 912 345 6789</li>
+          <li>Sergio Osmeña, Zamboanga del Norte, 7108</li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Sergio Sanctuary for tourism inquiries, itinerary support, group planning, and accommodations guidance in Sergio Osmeña.">
+  <title>Sergio Sanctuary | Contact</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--contact">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Contact Sergio Sanctuary</p>
+        <h1>Let us help plan your trip</h1>
+        <p>Share your date, group size, and travel goals so we can suggest a suitable Sergio Osmeña itinerary.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="contact-layout">
+          <aside class="contact-card contact-card--info" data-reveal>
+            <p class="eyebrow">Contact Details</p>
+            <h2>Tourism inquiry desk</h2>
+            <p>Use this page for itinerary questions, group planning, room guidance, and general visit concerns.</p>
+            <ul class="contact-points">
+              <li>Email: sergiosanctuary@gmail.com</li>
+<!--              <li>Phone: +63 912 345 6789</li>-->
+              <li>Address: Sergio Osmeña, Zamboanga del Norte, Philippines, 7108</li>
+              <li>Hours: Monday to Sunday, 8:00 AM to 6:00 PM</li>
+            </ul>
+          </aside>
+
+          <!-- Client-side validated inquiry form -->
+          <section class="contact-card contact-card--form form-surface">
+            <p class="eyebrow">Inquiry Form</p>
+            <h2>Send your travel request</h2>
+            <form id="contact-form" novalidate>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="full-name">Full Name</label>
+                  <input id="full-name" name="full-name" type="text" autocomplete="name" required>
+                  <p class="field-message" data-error-for="full-name"></p>
+                </div>
+                <div class="field">
+                  <label for="email">Email Address</label>
+                  <input id="email" name="email" type="email" autocomplete="email" required>
+                  <p class="field-message" data-error-for="email"></p>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone Number (optional)</label>
+                  <input id="phone" name="phone" type="tel" autocomplete="tel">
+                  <p class="field-message" data-error-for="phone"></p>
+                </div>
+                <div class="field">
+                  <label for="visit-date">Preferred Visit Date</label>
+                  <input id="visit-date" name="visit-date" type="date" required>
+                  <p class="field-message" data-error-for="visit-date"></p>
+                </div>
+                <div class="field field--full">
+                  <label for="group-type">Group Type</label>
+                  <select id="group-type" name="group-type">
+                    <option value="family">Family</option>
+                    <option value="couple">Couple</option>
+                    <option value="friends">Friends / Students</option>
+                    <option value="creator">Photographer / Vlogger</option>
+                  </select>
+                </div>
+                <div class="field field--full">
+                  <label for="message">Trip Details</label>
+                  <textarea id="message" name="message" placeholder="Tell us your plans, interests, and preferred activities." required></textarea>
+                  <p class="field-message" data-error-for="message"></p>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn--primary" type="submit">Submit Inquiry</button>
+              </div>
+              <p class="form-status" aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+        <div class="contact-map-large" data-reveal>
+          <div class="section-head">
+            <p class="eyebrow">Location Map</p>
+            <h2>Find Sergio Osmeña easily</h2>
+            <p>Use this map for route planning, nearby landmarks, and scenic stopovers before you arrive.</p>
+          </div>
+          <img src="images/attractions/sergio_map.webp" alt="Large map reference for Sergio Osmeña, Zamboanga del Norte" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">FAQ</p>
+          <h2>Common planning questions</h2>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Best month to visit?</h3>
+              <p>Most travelers prefer cooler months and stable weather windows. Always check the forecast before finalizing plans.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Is it beginner-friendly?</h3>
+              <p>Yes. Many attractions are accessible with light walking, while some areas are better for active travelers.</p>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Can groups be accommodated?</h3>
+              <p>Yes. Group inquiries can include suggested schedules, stop prioritization, and room planning guidance.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Reach out for practical trip planning help for Sergio Osmeña tourism experiences.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Direct Contact</h3>
+        <ul>
+          <li>Email: sergiosanctuary@gmail.com</li>
+          <li>Phone: +63 912 345 6789</li>
+          <li>Sergio Osmeña, Zamboanga del Norte, 7108</li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

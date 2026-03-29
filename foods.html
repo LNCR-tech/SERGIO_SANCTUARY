@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Explore food spots in Sergio Sanctuary including local meals, strawberry shakes, and scenic dining experiences in Sergio Osmeña.">
+  <title>Sergio Sanctuary | Food Spots</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--foods">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Food Spots</p>
+        <h1>Eat well while exploring the mountains</h1>
+        <p>Discover local dishes, strawberry treats, and scenic food stops that pair perfectly with your Sergio Osmeña itinerary.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#food-cards">Browse Food Cards</a>
+          <a class="btn btn--ghost" href="attractions.html">Back to Attractions</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="food-cards">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Featured Food Stops</p>
+          <h2>Local flavors around Sergio Sanctuary</h2>
+          <p>These cards are based on your uploaded photos and organized for easy trip planning.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/cecillias_plate1.webp" alt="Cecillia's Plate food area" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Cecillia's Plate</h3>
+              <p>A go-to local food stop for warm meals and group-friendly table setup.</p>
+              <a class="btn btn--primary btn--small" href="#restaurant-reservation-form" data-fill-target="reservation-restaurant" data-fill-value="cecillias-plate">Reserve a Table</a>
+              <div class="card__meta">
+                <span>Local dishes</span>
+                <span>Group dining</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/cecillias_plate_food.webp" alt="Cecillia's Plate featured dish" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Signature Plate Meals</h3>
+              <p>Comfort food selections that work well after long sightseeing sessions.</p>
+              <a class="btn btn--primary btn--small" href="#restaurant-reservation-form" data-fill-target="reservation-restaurant" data-fill-value="cecillias-plate">Reserve a Table</a>
+              <div class="card__meta">
+                <span>Hearty food</span>
+                <span>Post-trip refuel</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/viewpoint_foods.webp" alt="Food vendors near viewpoint area" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Viewpoint Food Strip</h3>
+              <p>Quick snacks and meals near scenic decks for travelers with tight schedules.</p>
+              <a class="btn btn--primary btn--small" href="#restaurant-reservation-form" data-fill-target="reservation-restaurant" data-fill-value="viewpoint-strip">Reserve a Table</a>
+              <div class="card__meta">
+                <span>Quick bites</span>
+                <span>Near viewpoints</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/la_presa_strawberryShake.webp" alt="La Presa strawberry shake drinks" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>La Presa Strawberry Shake</h3>
+              <p>Popular refreshment stop known for sweet strawberry-based drinks.</p>
+              <a class="btn btn--primary btn--small" href="#restaurant-reservation-form" data-fill-target="reservation-restaurant" data-fill-value="la-presa">Reserve a Table</a>
+              <div class="card__meta">
+                <span>Signature drink</span>
+                <span>Family favorite</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/la_presa_strawberryPlantation.webp" alt="La Presa plantation area with local produce" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>La Presa Farm Corner</h3>
+              <p>Farm atmosphere with fresh produce, snacks, and scenic countryside ambiance.</p>
+              <a class="btn btn--primary btn--small" href="#restaurant-reservation-form" data-fill-target="reservation-restaurant" data-fill-value="la-presa">Reserve a Table</a>
+              <div class="card__meta">
+                <span>Farm stop</span>
+                <span>Photo-friendly</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/acis_hillside_foods.webp" alt="Food offerings at ACIS Hillside" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>ACIS Hillside Food Picks</h3>
+              <p>Simple food choices in a hillside setting for in-between itinerary stops.</p>
+              <a class="btn btn--primary btn--small" href="#restaurant-reservation-form" data-fill-target="reservation-restaurant" data-fill-value="acis-hillside">Reserve a Table</a>
+              <div class="card__meta">
+                <span>Stopover meals</span>
+                <span>Nature setting</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Quick Food Guide</p>
+          <h2>What to try</h2>
+        </div>
+        <div class="table-wrap" data-reveal>
+          <table>
+            <thead>
+              <tr>
+                <th>Food Spot</th>
+                <th>Recommended Try</th>
+                <th>Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Cecillia's Plate</td>
+                <td>Local meal plates</td>
+                <td>Families and friend groups</td>
+              </tr>
+              <tr>
+                <td>La Presa</td>
+                <td>Strawberry shake and snacks</td>
+                <td>Day-trip refreshments</td>
+              </tr>
+              <tr>
+                <td>Viewpoint Food Strip</td>
+                <td>Quick snacks and drinks</td>
+                <td>Short stopovers during photo tours</td>
+              </tr>
+              <tr>
+                <td>ACIS Hillside</td>
+                <td>Simple comfort food picks</td>
+                <td>Relaxed itinerary pacing</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="restaurant-reservations">
+      <div class="container">
+        <div class="section-head section-head--compact" data-reveal>
+          <p class="eyebrow">Restaurant Reservations</p>
+          <h2>Reserve a table before you arrive</h2>
+          <p>Pick a food stop, confirm your preferred time, and send a simple sample request without leaving the page.</p>
+        </div>
+        <div class="request-layout">
+          <aside class="contact-card request-summary" data-reveal>
+            <p class="eyebrow">Before You Reserve</p>
+            <h3>Keep the request short and clear</h3>
+            <p>Use the card buttons above to preselect the restaurant, then complete the date, time, and group size below.</p>
+            <ul class="request-detail-list">
+              <li>
+                <strong>Best for group planning</strong>
+                <span>Cecillia's Plate works well for families and barkada meals.</span>
+              </li>
+              <li>
+                <strong>Best for quick stops</strong>
+                <span>Viewpoint Food Strip suits short scenic breaks and snack runs.</span>
+              </li>
+              <li>
+                <strong>Best for refreshment</strong>
+                <span>La Presa is ideal for strawberry drinks and light countryside stops.</span>
+              </li>
+            </ul>
+          </aside>
+          <section class="contact-card request-form-card form-surface anchor-target" id="restaurant-reservation-form">
+            <p class="eyebrow">Reservation Form</p>
+            <h3>Restaurant booking request</h3>
+            <form data-static-form>
+              <div class="form-grid">
+                <div class="field">
+                  <label for="reservation-name">Full Name</label>
+                  <input id="reservation-name" name="reservation-name" type="text" autocomplete="name" placeholder="Enter your name" required>
+                </div>
+                <div class="field">
+                  <label for="reservation-email">Email Address</label>
+                  <input id="reservation-email" name="reservation-email" type="email" autocomplete="email" placeholder="you@email.com" required>
+                </div>
+                <div class="field">
+                  <label for="reservation-phone">Phone Number</label>
+                  <input id="reservation-phone" name="reservation-phone" type="tel" autocomplete="tel" placeholder="+63 900 000 0000">
+                </div>
+                <div class="field">
+                  <label for="reservation-restaurant">Preferred Restaurant</label>
+                  <select id="reservation-restaurant" name="reservation-restaurant" required>
+                    <option value="cecillias-plate">Cecillia's Plate</option>
+                    <option value="la-presa">La Presa Strawberry Farm</option>
+                    <option value="viewpoint-strip">Viewpoint Food Strip</option>
+                    <option value="acis-hillside">ACIS Hillside Food Picks</option>
+                  </select>
+                </div>
+                <div class="field">
+                  <label for="reservation-date">Reservation Date</label>
+                  <input id="reservation-date" name="reservation-date" type="date" required>
+                </div>
+                <div class="field">
+                  <label for="reservation-time">Preferred Time</label>
+                  <input id="reservation-time" name="reservation-time" type="time" required>
+                </div>
+                <div class="field">
+                  <label for="reservation-guests">Number of Guests</label>
+                  <input id="reservation-guests" name="reservation-guests" type="number" min="1" max="20" placeholder="2" required>
+                </div>
+                <div class="field field--full">
+                  <label for="reservation-notes">Notes</label>
+                  <textarea id="reservation-notes" name="reservation-notes" placeholder="Allergies, seating preferences, or special requests."></textarea>
+                </div>
+              </div>
+              <div class="form-actions">
+                <button class="btn btn--primary" type="submit">Submit Reservation</button>
+              </div>
+              <p class="form-status" aria-live="polite"></p>
+            </form>
+          </section>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Sergio Sanctuary food guide helps travelers match meals with scenic stops and activity pacing.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="foods.html">Foods</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Trip Help</h3>
+        <ul>
+          <li><a href="contact.html">Contact us</a></li>
+          <li>Email: hello@sergiosanctuary.com</li>
+          <li>Sergio Osmeña, Zamboanga del Norte</li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary. Static midterm tourism website.</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

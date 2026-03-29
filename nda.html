@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Intellectual Property and Fair Use Disclaimer for the Sergio Sanctuary educational website project.">
+  <title>Sergio Sanctuary | NDA & Fair Use Disclaimer</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--about">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Legal Notice</p>
+        <h1>Intellectual Property &amp; Fair Use Disclaimer</h1>
+        <p>This page outlines the educational fair use basis for third-party materials that appear in this non-commercial project website.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <article class="contact-card" data-reveal>
+          <h2>1. Notice of Use for Educational Purposes</h2>
+          <p>This website is a non-profit educational project. It may contain copyrighted materials (such as images, videos, and text) that have not been specifically authorized by the copyright owners. These materials are used exclusively for instructional, research, and scholarly purposes related to Tourism Website Design and Development.</p>
+
+          <h2>2. Compliance with Philippine Law</h2>
+          <p>The use of such materials is intended to be consistent with the Doctrine of Fair Use as provided under Section 185 of Republic Act No. 8293 (The Intellectual Property Code of the Philippines), which states:</p>
+          <p>"The fair use of a copyrighted work for criticism, comment, news reporting, teaching including limited number of copies for classroom use, scholarship, research, and similar purposes is not an infringement of copyright."</p>
+          <p>Furthermore, this project adheres to Section 184.1(e), which allows for the inclusion of a work in a publication or broadcast if it is used as an aid for teaching and is compatible with fair use, provided the source and name of the author are mentioned.</p>
+
+          <h2>3. Limitation of Liability &amp; Attribution</h2>
+          <ul class="list-check">
+            <li>Ownership: All rights, title, and interest in and to the copyrighted materials used on this site remain the property of their respective owners.</li>
+            <li>No Commercial Gain: This site does not generate any revenue and is not used for any commercial exploitation.</li>
+            <li>Attribution: We make every effort to provide proper citation for all third-party content.</li>
+          </ul>
+
+          <h2>4. Takedown Policy</h2>
+          <p>If you are a copyright owner and believe that the use of your work on this website does not constitute fair use or violates your rights under the IP Code, please contact Sergio Sanctuary Project Team at sergiosanctuary@gmail.com. We will promptly remove the content upon valid request.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Sergio Sanctuary supports responsible tourism in Sergio Osmena through practical planning tools and educational destination content.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Legal Contact</h3>
+        <ul>
+          <li>Email: sergiosanctuary@gmail.com</li>
+          <li>Sergio Osmena, Zamboanga del Norte, 7108</li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

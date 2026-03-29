@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sergio Sanctuary camping guide with checklist, weather prep, safety reminders, and practical tips for first-time and returning campers.">
+  <title>Sergio Sanctuary | Camping Guide</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--camping">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Camping Guide</p>
+        <h1>Camp smarter in mountain weather</h1>
+        <p>Prepare your Sergio Osmeña camping trip with a lightweight checklist, weather-first planning, and safety reminders for all group types.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#checklist">Open Checklist</a>
+          <a class="btn btn--ghost" href="contact.html">Ask for Assistance</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="checklist">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Preparation</p>
+          <h2>Essential camping checklist</h2>
+          <p>These basics help prevent the most common mountain-camping issues.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Shelter and comfort</h3>
+              <ul class="list-check">
+                <li>Weather-ready tent with rainfly and groundsheet.</li>
+                <li>Sleeping bag rated for cool highland nights.</li>
+                <li>Compact blanket, extra socks, and dry clothes.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Food and hydration</h3>
+              <ul class="list-check">
+                <li>Reusable water bottles and hydration plan.</li>
+                <li>Quick-cook meals, snacks, and emergency calories.</li>
+                <li>Trash bags for strict leave-no-trace cleanup.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__body">
+              <h3>Safety and navigation</h3>
+              <ul class="list-check">
+                <li>Flashlight/headlamp and backup batteries.</li>
+                <li>Basic first-aid kit and personal medication.</li>
+                <li>Offline map screenshots and emergency contacts.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Camping Grounds Mini-Map</p>
+          <h2>Know where the camping grounds are before you unpack</h2>
+          <p>This map gives a simple layout of the usual arrival route, main tent zone, utility points, and the nearby sunrise edge.</p>
+        </div>
+        <div class="mini-map-layout">
+          <div class="mini-map" data-reveal>
+            <div class="mini-map__surface" role="img" aria-label="Illustrated camping grounds mini-map showing arrival gate, check-in, main tent zone, water point, and sunrise ridge">
+              <svg class="mini-map__path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M10 84 C20 76, 30 70, 40 63 S54 54, 62 48 S76 33, 88 20"/>
+                <path d="M10 84 C20 76, 30 70, 40 63 S54 54, 62 48 S76 33, 88 20"/>
+              </svg>
+
+              <div class="mini-map__marker mini-map__marker--forest" style="--x: 12%; --y: 84%;">
+                <span class="mini-map__pin">1</span>
+                <span class="mini-map__badge">
+                  <strong>Arrival Gate</strong>
+                  <span>Main drop-off and gear unload point before entering the grounds.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--forest" style="--x: 37%; --y: 64%;">
+                <span class="mini-map__pin">2</span>
+                <span class="mini-map__badge">
+                  <strong>Check-in Shed</strong>
+                  <span>Confirm your spot first before choosing a tent position.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--camp" style="--x: 58%; --y: 50%;">
+                <span class="mini-map__pin">3</span>
+                <span class="mini-map__badge">
+                  <strong>Main Tent Zone</strong>
+                  <span>Primary camping grounds with the best balance of access and space.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--video" style="--x: 74%; --y: 36%; --badge-offset: -26%;">
+                <span class="mini-map__pin">4</span>
+                <span class="mini-map__badge">
+                  <strong>Water & Wash Area</strong>
+                  <span>Quick utility stop for refill and basic cleanup.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--sun" style="--x: 87%; --y: 19%; --badge-offset: -64%;">
+                <span class="mini-map__pin">5</span>
+                <span class="mini-map__badge">
+                  <strong>Sunrise Ridge</strong>
+                  <span>Short walk from camp for early morning viewing and photos.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__caption">
+                <span>Illustrated camp layout only</span>
+                <span>Set up before dusk for safest placement</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="contact-card mini-map-panel" data-reveal>
+            <p class="eyebrow">Ground Guide</p>
+            <h3>Keep camp inside the marked main zone</h3>
+            <p>Use the arrival gate and check-in point first, then choose a tent area inside the main grounds so access to water and sunrise viewing stays easy.</p>
+            <ul class="mini-map__legend">
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--forest-600);"></span>
+                <div>
+                  <strong>Arrival and check-in</strong>
+                  <span>Unload gear early, check conditions, and avoid blocking the access path.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: #7ca35b;"></span>
+                <div>
+                  <strong>Main tent zone</strong>
+                  <span>Use this as your default camping grounds instead of exposed side edges.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: #8fb293;"></span>
+                <div>
+                  <strong>Water and wash area</strong>
+                  <span>Plan cleanup here so the sleeping area stays dry and organized.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--sun-500);"></span>
+                <div>
+                  <strong>Sunrise ridge</strong>
+                  <span>Walk here lightly in the morning, then return to pack out the site cleanly.</span>
+                </div>
+              </li>
+            </ul>
+            <div class="mini-map__meta">
+              <span>Main camping grounds</span>
+              <span>Water access</span>
+              <span>Sunrise walk</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Timing Guide</p>
+          <h2>Suggested day-by-day flow</h2>
+          <p>Use this sample rhythm for a safe and enjoyable overnight mountain camp.</p>
+        </div>
+        <div class="table-wrap" data-reveal>
+          <table>
+            <thead>
+              <tr>
+                <th>Time</th>
+                <th>Recommended Activity</th>
+                <th>Purpose</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>2:00 PM</td>
+                <td>Arrival and camp setup</td>
+                <td>Secure tent before wind and low-light conditions.</td>
+              </tr>
+              <tr>
+                <td>4:30 PM</td>
+                <td>Short nature walk</td>
+                <td>Scout photo points and check terrain.</td>
+              </tr>
+              <tr>
+                <td>6:00 PM</td>
+                <td>Dinner and quiet rest</td>
+                <td>Warm up and conserve energy for early sunrise.</td>
+              </tr>
+              <tr>
+                <td>5:15 AM</td>
+                <td>Sunrise viewing session</td>
+                <td>Capture best light and mountain atmosphere.</td>
+              </tr>
+              <tr>
+                <td>8:00 AM</td>
+                <td>Pack-out and cleanup</td>
+                <td>Leave site clean and trail-ready for others.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Camping at Sergio Sanctuary is best when nature, safety, and community respect are kept in balance.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="attractions.html">Attractions</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Need Help?</h3>
+        <ul>
+          <li>Check weather before packing</li>
+          <li>Message us for itinerary help</li>
+          <li><a href="contact.html">Go to Contact</a></li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

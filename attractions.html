@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover top attractions in Sergio Osmeña including scenic viewpoints, food stops, wellness corners, and photo-ready mountain spots.">
+  <title>Sergio Sanctuary | Attractions</title>
+  <script>
+    (() => {
+      try {
+        const savedTheme = localStorage.getItem("sergio-sanctuary-theme");
+        const preferredTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+        const theme = savedTheme === "dark" || savedTheme === "light" ? savedTheme : preferredTheme;
+        document.documentElement.dataset.theme = theme;
+        document.documentElement.style.colorScheme = theme;
+      } catch {}
+    })();
+  </script>
+  <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="images/icons/logo-favicon-white.png">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="index.html" aria-label="Sergio Sanctuary Home">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary logo">
+        <span>Sergio<br>Sanctuary</span>
+      </a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="site-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Toggle navigation menu</span>
+      </button>
+      <nav class="site-nav" id="site-menu" data-menu aria-label="Primary navigation">
+        <a href="index.html" data-nav-link>Home</a>
+        <a href="attractions.html" data-nav-link>Attractions</a>
+        <a href="foods.html" data-nav-link>Foods</a>
+        <a href="camping-guide.html" data-nav-link>Camping Guide</a>
+        <a href="rooms.html" data-nav-link>Rooms</a>
+        <a href="nature-trip.html" data-nav-link>Nature Trip</a>
+        <a href="about.html" data-nav-link>About</a>
+        <a href="contact.html" data-nav-link>Contact</a>
+      </nav>
+      <a class="btn btn--primary btn--small nav-cta" href="contact.html">Plan Your Visit</a>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero hero--attractions">
+      <div class="container hero__content" data-reveal>
+        <p class="eyebrow">Attractions</p>
+        <h1>Mountain spots worth every stop</h1>
+        <p>From panoramic ridges to local food corners, these curated attraction picks are ideal for families, couples, friends, and content creators.</p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="nature-trip.html">Build a Nature Trip</a>
+          <a class="btn btn--ghost" href="#gallery">Open Photo Gallery</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Featured Places</p>
+          <h2>Top attractions in Sergio Sanctuary</h2>
+          <p>Use this page to shortlist your priority stops before checking weather and itinerary timing.</p>
+        </div>
+        <div class="grid-3">
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/lantay_view_room.webp" alt="Lantay View scenic mountain deck" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Lantay View Deck</h3>
+              <p>A wide-angle mountain panorama with breezy open-air viewpoints and prime sunrise visibility.</p>
+              <div class="card__meta">
+                <span>Best time: 5:30 AM</span>
+                <span>Photo hotspot</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/la_presa_strawberryPlantation.webp" alt="La Presa strawberry plantation area" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>La Presa Strawberry Farm</h3>
+              <p>Enjoy strawberry picking vibes, signature shakes, and flowery garden views perfect for family visits.</p>
+              <div class="card__meta">
+                <span>Family-friendly</span>
+                <span>Budget</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/acis_hillside1.webp" alt="ACIS Hillside scenic area and facilities" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>ACIS Hillside</h3>
+              <p>Mountain-side space with relaxed sightseeing corners and casual stopover experiences.</p>
+              <div class="card__meta">
+                <span>Relaxation pick</span>
+                <span>Group-friendly</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">More Stops</p>
+          <h2>Additional attraction cards from your new photos</h2>
+          <p>These spots can be mixed into custom itineraries for families, groups, and content creators.</p>
+        </div>
+        <div class="grid-4">
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/nikas_ridge1.webp" alt="Nika's Ridge mountain viewpoint" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Nika's Ridge</h3>
+              <p>Open ridge-line views with dramatic mountain layers ideal for early-morning visits.</p>
+              <div class="card__meta">
+                <span>Scenic stop</span>
+                <span>Photo-ready</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/lantay_view2.webp" alt="Lantay View mountain overlook" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Lantay View Overlook</h3>
+              <p>Elevated view deck with broad mountain layers and calm weather atmosphere.</p>
+              <div class="card__meta">
+                <span>Highland view</span>
+                <span>Family-friendly</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/acis_hillside2.webp" alt="ACIS Hillside tourism area" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>ACIS Hillside</h3>
+              <p>Relaxed mountain attraction with open spaces for short exploration and content shots.</p>
+              <div class="card__meta">
+                <span>Nature stop</span>
+                <span>Easy access</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/hillsite2.webp" alt="Hillsite panorama overlooking Sergio Osmeña" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Hillsite Panorama</h3>
+              <p>Wide scenic exposure with clean horizons for daytime sightseeing and framing shots.</p>
+              <div class="card__meta">
+                <span>Panoramic view</span>
+                <span>Sunset option</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/hillsite3.webp" alt="Hillsite scenic highland area" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Hillsite Scenic Zone</h3>
+              <p>Highland atmosphere with cool weather and open-air scenery for restful trip pacing.</p>
+              <div class="card__meta">
+                <span>Calm stop</span>
+                <span>All-day visit</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/hillsite1.webp" alt="Hillsite scenic deck with open mountain backdrop" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>Hillsite Cloud Deck</h3>
+              <p>Scenic stop known for airy atmosphere and open view framing during clear mornings.</p>
+              <div class="card__meta">
+                <span>Scenic stop</span>
+                <span>Morning best</span>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-reveal>
+            <div class="card__media">
+              <img src="images/attractions/acis_hillside3.webp" alt="ACIS Hillside scenic landscape angle" loading="lazy">
+            </div>
+            <div class="card__body">
+              <h3>ACIS Hillside Scenic Point</h3>
+              <p>Relaxed attraction with open skies and layered ridges ideal for landscape captures.</p>
+              <div class="card__meta">
+                <span>Landscape view</span>
+                <span>Creator-friendly</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Creator Mini-Map</p>
+          <h2>Markers for photographers, videographers, and scenic shooters</h2>
+          <p>Use this visual guide to match the overlook to the kind of frame you want before moving around the attraction area.</p>
+        </div>
+        <div class="mini-map-layout">
+          <div class="mini-map" data-reveal>
+            <div class="mini-map__surface" role="img" aria-label="Illustrated creator mini-map with four marked viewpoints for photography and videography">
+              <svg class="mini-map__path" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+                <path d="M14 76 C24 68, 32 62, 41 56 S55 47, 66 39 S80 24, 88 18"/>
+                <path d="M14 76 C24 68, 32 62, 41 56 S55 47, 66 39 S80 24, 88 18"/>
+              </svg>
+
+              <div class="mini-map__marker mini-map__marker--sun" style="--x: 18%; --y: 74%;">
+                <span class="mini-map__pin">1</span>
+                <span class="mini-map__badge">
+                  <strong>Hillsite Panorama</strong>
+                  <span>Wide valley opener for photographers who want layered horizon shots.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--video" style="--x: 40%; --y: 58%;">
+                <span class="mini-map__pin">2</span>
+                <span class="mini-map__badge">
+                  <strong>Lantay View Deck</strong>
+                  <span>Strong option for slow pans, intros, and sunrise reel openings.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--forest" style="--x: 64%; --y: 41%;">
+                <span class="mini-map__pin">3</span>
+                <span class="mini-map__badge">
+                  <strong>Nika's Ridge</strong>
+                  <span>Best for portrait layers and dramatic background compression.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__marker mini-map__marker--video" style="--x: 86%; --y: 20%; --badge-offset: -62%;">
+                <span class="mini-map__pin">4</span>
+                <span class="mini-map__badge">
+                  <strong>ACIS Scenic Point</strong>
+                  <span>Easy-access stop for trip recaps, talking shots, and soft scenic cutaways.</span>
+                </span>
+              </div>
+
+              <div class="mini-map__caption">
+                <span>Illustrated creator route only</span>
+                <span>Best lighting: sunrise and late afternoon</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="contact-card mini-map-panel" data-reveal>
+            <p class="eyebrow">Marker Guide</p>
+            <h3>Pick the stop based on the frame</h3>
+            <p>The markers correspond to viewpoints that work differently for still photography, cinematic clips, portrait framing, and quick mobile content.</p>
+            <ul class="mini-map__legend">
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--sun-500);"></span>
+                <div>
+                  <strong>Hillsite Panorama</strong>
+                  <span>Best for landscape photography, opening shots, and wide social posts.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: #8fb293;"></span>
+                <div>
+                  <strong>Lantay View Deck</strong>
+                  <span>Best for videographers who need motion, people-in-frame intros, and light changes.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: var(--forest-600);"></span>
+                <div>
+                  <strong>Nika's Ridge</strong>
+                  <span>Best for portraits, moody sky layers, and telephoto-looking compositions.</span>
+                </div>
+              </li>
+              <li>
+                <span class="mini-map__key" style="--marker-color: #8fb293;"></span>
+                <div>
+                  <strong>ACIS Scenic Point</strong>
+                  <span>Best for casual vlogs, easy-access content, and group clips without much setup.</span>
+                </div>
+              </li>
+            </ul>
+            <div class="mini-map__meta">
+              <span>Photography</span>
+              <span>Videography</span>
+              <span>Sunrise views</span>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- Simple gallery with lightbox interaction -->
+    <section class="section" id="gallery">
+      <div class="container">
+        <div class="section-head" data-reveal>
+          <p class="eyebrow">Photo Gallery</p>
+          <h2>Preview scenic frames</h2>
+          <p>Tap any image to open a larger view.</p>
+        </div>
+        <div class="info-strip" data-reveal>
+          <strong>Looking for food spots?</strong> Visit the dedicated <a href="foods.html">Foods page</a> for meal and drink highlights.
+        </div>
+        <div class="gallery-grid">
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/viewpoint1.webp" data-lightbox-alt="Viewpoint 1 scenic frame">
+            <img src="images/attractions/viewpoint1.webp" alt="Viewpoint 1 scenic frame" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/viewpoint2.webp" data-lightbox-alt="Viewpoint 2 hillside horizon">
+            <img src="images/attractions/viewpoint2.webp" alt="Viewpoint 2 hillside horizon" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/viewpoint3.webp" data-lightbox-alt="Viewpoint 3 panoramic scene">
+            <img src="images/attractions/viewpoint3.webp" alt="Viewpoint 3 panoramic scene" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/lantay_view1.webp" data-lightbox-alt="Lantay View 1 mountain scene">
+            <img src="images/attractions/lantay_view1.webp" alt="Lantay View 1 mountain scene" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/lantay_view2.webp" data-lightbox-alt="Lantay View 2 with wider valley view">
+            <img src="images/attractions/lantay_view2.webp" alt="Lantay View 2 with wider valley view" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/lantay_view3.webp" data-lightbox-alt="Lantay View 3 nature scenery">
+            <img src="images/attractions/lantay_view3.webp" alt="Lantay View 3 nature scenery" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/la_presa1.webp" data-lightbox-alt="La Presa viewpoint 1">
+            <img src="images/attractions/la_presa1.webp" alt="La Presa viewpoint 1" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/la_presa2.webp" data-lightbox-alt="La Presa viewpoint 2">
+            <img src="images/attractions/la_presa2.webp" alt="La Presa viewpoint 2" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/la_presa3.webp" data-lightbox-alt="La Presa viewpoint 3">
+            <img src="images/attractions/la_presa3.webp" alt="La Presa viewpoint 3" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/nikas_ridge1.webp" data-lightbox-alt="Nika's Ridge viewpoint 1">
+            <img src="images/attractions/nikas_ridge1.webp" alt="Nika's Ridge viewpoint 1" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/nikas_ridge2.webp" data-lightbox-alt="Nika's Ridge viewpoint 2">
+            <img src="images/attractions/nikas_ridge2.webp" alt="Nika's Ridge viewpoint 2" loading="lazy">
+          </button>
+          <button class="gallery-button" type="button" data-reveal data-lightbox-src="images/attractions/nikas_ridge3.webp" data-lightbox-alt="Nika's Ridge viewpoint 3">
+            <img src="images/attractions/nikas_ridge3.webp" alt="Nika's Ridge viewpoint 3" loading="lazy">
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section class="footer-brand">
+        <img src="images/icons/logo.webp" alt="Sergio Sanctuary emblem">
+        <p>Sergio Sanctuary supports sustainable tourism by guiding visitors toward scenic, safe, and community-respecting travel choices.</p>
+      </section>
+      <section>
+        <h3>Explore</h3>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="camping-guide.html">Camping Guide</a></li>
+          <li><a href="rooms.html">Rooms</a></li>
+          <li><a href="nature-trip.html">Nature Trip</a></li>
+        </ul>
+      </section>
+      <section>
+        <h3>Visit Details</h3>
+        <ul>
+          <li>Sergio Osmeña, Zamboanga del Norte, 7108</li>
+          <li>Email: sergiosanctuary@gmail.com</li>
+          <li>Phone: +63 912 345 6789</li>
+          <li><a href="contact.html">Send an inquiry</a></li>
+          <li><a href="nda.html">NDA / Fair Use Disclaimer</a></li>
+        </ul>
+      </section>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Sergio Sanctuary</p>
+    </div>
+  </footer>
+
+  <div class="lightbox" id="lightbox-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Image preview modal">
+    <button class="lightbox__close" type="button" data-lightbox-close>Close</button>
+    <img id="lightbox-image" alt="">
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
